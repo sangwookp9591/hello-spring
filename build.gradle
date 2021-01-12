@@ -9,10 +9,11 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 repositories {
-	mavenCentral()
+	mavenCentral()  //이사이트에서 받아라라고 간단하게 설정한 것이다.
 }
 
 dependencies {
+	implementation group: 'org.springframework.boot', name: 'spring-boot-devtools'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

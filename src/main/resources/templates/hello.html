@@ -1,0 +1,35 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p th:text="'안녕하세요.'+${data}">안녕하세요. 손님</p>
+</body>
+</html>
+<!--배포시  cmd -> ./gradlw build  cd build/libs , java -jar hello-spring-0.0.01-SPANPSHOT.jar-->
+<!--build  폴더 삭제시 ./gradlew clean-->
+
+
+<!--
+
+스프링 웹 개발
+
+1. 정적 컨텐츠
+- 파일을 그대로 웹브라우저에 내려주는것
+
+2. MVC 와 템플릿 엔진
+-JSP PHP(템플릿 엔진)
+->HTML을 그냥주는 것이 아니라 서버에서 프로그래밍 해서 HTML을 동적으로바꿔서 내리는것
+-즉 . 서버에서 변형을해서 웹브라우저에 내려주는것
+
+3. API
+-JSON 데이터 구조 포맷으로 CLIENT에 데이터를 내려주는것
+-VUE.JS
+
+-->
+
