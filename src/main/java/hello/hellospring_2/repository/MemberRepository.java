@@ -4,7 +4,7 @@ import hello.hellospring_2.domain.Member;
 
 import java.util.List;
 import java.util.Optional;
-
+//데이터 저장소
 public interface MemberRepository {
 
     Member save(Member member);
