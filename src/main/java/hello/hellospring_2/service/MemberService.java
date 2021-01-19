@@ -4,11 +4,13 @@ import hello.hellospring_2.domain.Member;
 import hello.hellospring_2.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 //@Service//스프링은 스프링 컨테이너에 스프링 빈을 등록할때 기본으로 싱글톤으로 등록한다.
+@Transactional
 public class MemberService {
     //여기서 TestCase 한번에 만드는 법 ctrl shift t
     //private final MemberRepository memberRepository =  new MemoryMemberRepository();

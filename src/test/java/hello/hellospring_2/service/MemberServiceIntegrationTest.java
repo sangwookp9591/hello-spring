@@ -12,16 +12,11 @@ import org.springframework.transaction.annotation.Transactional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
 @SpringBootTest
-@Transactional//testcase 달면 test 실행할때 trascational을 먼저 실행하고 . test가 끝나면 롤백을함.
+@Transactional
 class MemberServiceIntegrationTest {
-    @Autowired //테스트일때는 필드 인젝션으로 autowired로 받아도됨 -> 테스트를 다른데서 가져다쓸게아니기 때문에.
-    MemberService memberService;
-
-    @Autowired
-    MemberRepository memberRepository;
-    
+    @Autowired MemberService memberService;
+    @Autowired MemberRepository memberRepository;
     @Test
     public void 회원가입() throws Exception {
         //Given
